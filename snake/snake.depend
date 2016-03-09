@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1457438984 source:d:\github\lucent\snake\main.cpp
+	"uselei.h"
+	<stdio.h>
+	"main.h"
+
+1457438954 d:\github\lucent\snake\uselei.h
+
+1457438999 d:\github\lucent\snake\main.h
+	<windows.h>
+

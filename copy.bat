@@ -1,0 +1,1 @@
+copy D:\GitHub\lucent\snake\bin\Debug\snake.dll D:\GitHub\lucent\lucent_0.5\player_1.dll
