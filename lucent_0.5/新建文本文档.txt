@@ -1,0 +1,53 @@
+函数的返回一个int型将作为策略，其中0代表向上，1代表向右，2代表向下，3代表向左
+
+class point
+{
+public:
+    int x,y;
+    point operator +(point s)
+    {
+        point pp;
+        pp.x = s.x + x;
+        pp.y = s.y + y;
+        return pp;
+    }
+
+};
+
+class snack
+{
+public:
+    point body[76];
+    int tail;
+    int head;
+    int bodylen;
+};
+
+
+class giveplayer
+{
+public:
+    int smap[40][40];
+    snack p1;
+    snack p2;
+    point food;
+    int mpsize;
+}playerget;
+
+giveplayer结构体
+
+smap :为当前的局势数组。其中数字1组成一条蛇，数字3组成另一条蛇，数字2是食物。
+p1和p2：分别是两人蛇的状态，类型为snack。
+food：为当前食物坐标。
+mapsize：为地图尺寸。
+
+snack 结构体
+
+bodylen :当前蛇的长度。
+body ：当前蛇身各点的坐标。
+head :为头部在body中的位置（其实恒为零）。
+tail ：为尾部在body中的位子。
+
+point结构体
+
+不多说，x，y，分别代表。x，y坐标。
